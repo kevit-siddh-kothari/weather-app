@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <%- include('../partials/heading.ejs') %>
+        <br>
+        <br>
+        <br>
+        <h1 class="heading">Weather App</h1>
+        <form class="form" action='/Data' method="get">
+            <label for="name" class="form-label" style="color: white;">Enter City Name</label>
+            <input type="text" id="city" name="name" class="form-input" placeholder="City Name">
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h2 style="color: red;"><%=print%></h2>
+    </div>
+</body>
+</html>
